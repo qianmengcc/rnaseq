@@ -1,0 +1,6 @@
+1.下载解压安装miniconda3
+2.envs中配置rnaseq环境    conda activate rnaseq启动环境    deactivate退出  下载相关分析软件
+3.prefetch --option-file SraAccList.txt 获取sra文件     (在GEO数据库中下载sra文件的序列号txt文件，winscp导入linux目录中)
+本例中  采用GES201877
+ 解压后文件合并在一个文件夹  mv ./SRR*/*.sra ./sra
+ 格式转换  fastq-dump  --split-3 --gzip SRR*
