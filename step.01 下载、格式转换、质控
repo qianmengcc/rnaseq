@@ -3,4 +3,5 @@
 3.prefetch --option-file SraAccList.txt 获取sra文件     (在GEO数据库中下载sra文件的序列号txt文件，winscp导入linux目录中)
 本例中  采用GES201877
  解压后文件合并在一个文件夹  mv ./SRR*/*.sra ./sra
- 格式转换  fastq-dump  --split-3 --gzip SRR*
+4.格式转换  fastq-dump  --split-3 --gzip SRR*
+5.fastqc进行质控  fastqc -o . *.gz             -o 表示输出文件的位置  此处为当前目录 .
