@@ -5,3 +5,4 @@
  解压后文件合并在一个文件夹  mv ./SRR*/*.sra ./sra
 4.格式转换  fastq-dump  --split-3 --gzip SRR*
 5.fastqc进行质控  fastqc -o . *.gz             -o 表示输出文件的位置  此处为当前目录 .
+6.multiqc  . 在当前目录汇总生成总指控报告 html格式
